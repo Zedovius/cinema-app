@@ -1,0 +1,22 @@
+{
+  "name": "cinema-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {  
+    "start": "node ./src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zedovius/cinema-app.git"
+  },
+  "author": "@zedovius",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zedovius/cinema-app/issues"
+  },
+  "homepage": "https://github.com/Zedovius/cinema-app#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.1"
+  }
+}

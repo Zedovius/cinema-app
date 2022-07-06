@@ -1,0 +1,133 @@
+/* 
+    1. Positioning
+    2. Box model
+    3. Fonts
+    4. Visuals
+    5. Others (new css features )
+*/
+
+:root {
+    /* Colors */
+    --primary-white: #FFFBEF;
+    --primary-black: #131111;
+    --background-color: #061000;
+    --success-color: #38960C;
+    --accent-color: #B95900;
+    --error-color: #A40000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* font-family: 'Red Rose', cursive;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    height: 100%;
+    min-width: 320px;
+    display: block;
+    background-color: var(--background-color);
+}
+
+header {
+    width: 100vw;
+    height: 79px;
+    padding: 15px 1rem 5px;
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-white);
+}
+
+ header .header__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.header__container .header__logo {
+    width: 126px;
+    position: relative;
+    left: calc(50% - 63px);
+}
+
+.header__container .header__menu-icon {
+    height: 17px;
+    width: 40px;
+    background-image: url("../assets/icons/menuBtn.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+main .movies-reel {
+    height: 100%;
+    width: 9.0625rem;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column; */
+    gap: 1.5rem;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: proximity;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: aquamarine;
+}   
+
+.movies-reel::-webkit-scrollbar {
+    display: none;
+}
+
+.movies-reel .movies-reel__movie-container {
+    height: 12rem;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    scroll-snap-align: center;
+    background-color: #B95900;
+    overflow: hidden;
+}
+
+.movies-reel__movie-container .movie-container__movie-info {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 0.75rem;
+    color: white;
+    
+}
+
+
+.movies-reel__movie-container .movie-container__movie-specs {
+    background-color: #38960C;
+    font-size: 0.625rem;
+}
+
+.movie-container__movie-specs ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+}
