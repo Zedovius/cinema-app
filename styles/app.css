@@ -56,13 +56,13 @@ header {
     justify-content: space-between;
 }
 
-.header__container .header__logo {
+.header__logo {
     width: 126px;
     position: relative;
     left: calc(50% - 63px);
 }
 
-.header__container .header__menu-icon {
+.header__menu-icon {
     height: 17px;
     width: 40px;
     background-image: url("../assets/icons/menuBtn.svg");
@@ -95,7 +95,7 @@ main .movies-reel {
     display: none;
 }
 
-.movies-reel .movies-reel__movie-container {
+.movies-reel__movie-container {
     height: 12rem;
     width: 100%;
     position: relative;
@@ -105,7 +105,7 @@ main .movies-reel {
     overflow: hidden;
 }
 
-.movies-reel__movie-container .movie-container__movie-info {
+.movie-container__movie-info {
     height: 40%;
     width: 100%;
     position: absolute;
@@ -120,7 +120,7 @@ main .movies-reel {
 }
 
 
-.movies-reel__movie-container .movie-container__movie-specs {
+.movie-container__movie-specs {
     background-color: #38960C;
     font-size: 0.625rem;
 }
