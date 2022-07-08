@@ -80,15 +80,11 @@ main .movies-reel {
     height: 100%;
     width: 9.0625rem;
     margin: 0 auto;
-    /* display: flex;
-    flex-direction: column; */
-    gap: 1.5rem;
     overflow-y: scroll;
     overscroll-behavior-y: contain;
     scroll-snap-type: proximity;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-color: aquamarine;
 }   
 
 .movies-reel::-webkit-scrollbar {
@@ -98,11 +94,16 @@ main .movies-reel {
 .movies-reel__movie-container {
     height: 12rem;
     width: 100%;
+    margin-block-end: 2rem;
     position: relative;
     border-radius: 5px;
     scroll-snap-align: center;
     background-color: #B95900;
     overflow: hidden;
+}
+
+.movie-img {
+    
 }
 
 .movie-container__movie-info {
@@ -116,13 +117,14 @@ main .movies-reel {
     text-align: center;
     font-size: 0.75rem;
     color: white;
-    
+    background: rgb(1,18,0);
+    background: linear-gradient(180deg, rgba(1,18,0,0.07326680672268904) 0%, rgba(3,17,0,1) 53%);
 }
 
 
 .movie-container__movie-specs {
-    background-color: #38960C;
     font-size: 0.625rem;
+    font-weight: 100;
 }
 
 .movie-container__movie-specs ul {
